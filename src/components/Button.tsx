@@ -1,10 +1,6 @@
-import React from 'react';
+import React, {ButtonHTMLAttributes} from 'react';
 
-type ButtonPropsType = {
-    title: string
-}
-
-export const Button = ({title}: ButtonPropsType) => {
+export const Button = ({title}: ButtonHTMLAttributes<HTMLButtonElement>) => {
     return (
         <button>{title}</button>
     );
